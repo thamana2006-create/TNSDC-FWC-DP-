@@ -1,0 +1,273 @@
+!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Student Portfolio</title>
+
+  <style>
+
+    :root {
+
+      --bg-color: #f4f4f4;
+
+      --text-color: #333;
+
+      --primary-color: #3498db;
+
+    }
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background: var(--bg-color);
+
+      color: var(--text-color);
+
+      transition: all 0.3s ease;
+
+    }
+
+    header {
+
+      background: var(--primary-color);
+
+      color: #fff;
+
+      padding: 20px;
+
+      text-align: center;
+
+    }
+
+    nav {
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 20px;
+
+      margin: 15px 0;
+
+    }
+
+    nav a {
+
+      text-decoration: none;
+
+      color: var(--primary-color);
+
+      font-weight: bold;
+
+    }
+
+    section {
+
+      max-width: 800px;
+
+      margin: auto;
+
+      padding: 20px;
+
+    }
+
+    .card {
+
+      background: white;
+
+      padding: 20px;
+
+      margin: 15px 0;
+
+      border-radius: 10px;
+
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      background: var(--primary-color);
+
+      color: #fff;
+
+      padding: 10px;
+
+      margin-top: 20px;
+
+    }
+
+    .theme-btns {
+
+      display: flex;
+
+      justify-content: center;
+
+      margin: 10px 0;
+
+      gap: 10px;
+
+    }
+
+    .btn {
+
+      border: none;
+
+      padding: 8px 15px;
+
+      border-radius: 6px;
+
+      cursor: pointer;
+
+      color: white;
+
+      font-weight: bold;
+
+    }
+
+    .blue { background: #3498db; }
+
+    .green { background: #2ecc71; }
+
+    .purple { background: #9b59b6; }
+
+    .dark { background: #2c3e50; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Thamana A </h1>
+
+    <p>Student | Learner | Creator</p>
+
+  </header>
+
+  <div class="theme-btns">
+
+    <button class="btn blue" onclick="changeTheme('#3498db')">Blue</button>
+
+    <button class="btn green" onclick="changeTheme('#2ecc71')">Green</button>
+
+    <button class="btn purple" onclick="changeTheme('#9b59b6')">Purple</button>
+
+    <button class="btn dark" onclick="changeTheme('#2c3e50')">Dark</button>
+
+  </div>
+
+  <nav>
+
+    <a href="#about">About Me</a>
+
+    <a href="#skills">Skills</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <section id="about">
+
+    <div class="card">
+
+      <h2>About Me</h2>
+
+      <p>Hello! I am  Thamana A a student passionate about technology, web development, and design. This portfolio showcases my skills, projects, and journey as a learner.</p>
+
+    </div>
+
+  </section>
+
+  <section id="skills">
+
+    <div class="card">
+
+      <h2>Skills</h2>
+
+      <ul>
+
+        <li>HTML, CSS, JavaScript</li>
+
+        <li>C++ & Object-Oriented Programming</li>
+
+        <li>Problem Solving & Algorithms</li>
+
+        <li>UI/UX Basics</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <div class="card">
+
+      <h2>Projects</h2>
+
+      <p>Here are some projects I’ve worked on:</p>
+
+      <ul>
+
+        <li>Personal Portfolio Website</li>
+
+        <li>Student Management System (C++)</li>
+
+        <li>Weather App using API</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="card">
+
+      <h2>Contact</h2>
+
+      <p>Email: yourname@email.com</p>
+
+      <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>© 2025 My Student Portfolio</p>
+
+  </footer>
+
+  <script>
+
+    function changeTheme(color) {
+
+      document.documentElement.style.setProperty('--primary-color', color);
+
+    }
+
+  </script>
+
+</body>
+
+</html>
